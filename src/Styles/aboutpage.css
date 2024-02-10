@@ -1,0 +1,58 @@
+.aboutimage{
+    /* height: 400px; */
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    /* margin: 0 auto; */
+}
+.about-image-box{
+    margin: 0 auto;
+}
+.about_container{
+    margin-top: 100px;
+}
+
+.about-row-box{
+    background: white;
+    margin: 50px;
+    border: 1px solid rgba(48, 31, 9, 0.747);
+    padding: 25px;
+    border-radius: 20px;
+}
+
+
+
+.first-section h2,
+.second_section h2{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 35px;
+    font-weight: bold;
+}
+.sub-text{
+    margin-bottom: 60px;
+}
+
+.about-title{
+    text-align: center;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+@media screen and (max-width:769px) {
+    .sub-text{
+        /* margin-top: 30px; */
+    }
+    .aboutimage{
+        /* height: 400px; */
+        height: 350px;
+    }
+    .second_section{
+        margin-top: 20px;
+    }
+
+    .first-section {
+        margin-top: 20px;
+    }
+}

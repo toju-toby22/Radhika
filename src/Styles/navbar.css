@@ -1,0 +1,134 @@
+.new-alert {
+    /* Your custom styles here */
+    background-color: red !important;
+  }
+  
+
+.radhika-logo{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+
+}
+.nav_container{
+    
+}
+
+.nav-gap{
+    margin: 0 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+.contain_nav_bar{
+    display: flex;
+    align-items: center !important;
+    justify-content: space-around;
+    /* margin: 0 auto; */
+    padding: 10px;
+    background: linear-gradient(to right, rgb(173, 134, 83), rgb(173, 134, 83));
+    /* background-color: white; */
+    color: rgb(255, 255, 255);
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+
+}
+
+
+.btn-bo{
+    padding-top: 80px;
+  }
+
+
+
+.logo_items h2{
+    font-family: 'Space Grotesk', sans-serif;
+}
+.items{
+    display: flex;
+    align-items: center !important;
+    justify-content: space-between;
+    gap: 10px;
+    /* font-size: 20px; */
+    /* font-family: 'Exo 2', sans-serif; */
+}
+.logo_container{
+    cursor: pointer;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    font-size: 20px;
+    /* border-bottom: white; */
+}
+
+#navbar li{
+    position: relative;
+    font-family: 'Space Grotesk', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+#navbar li:hover{
+    cursor: pointer;
+    color: #c3cfe2;
+ 
+}
+
+#navbar li:hover::after {
+    content: "";
+    width: 70%;
+    height: 2px;
+    background: #c3cfe2;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile{
+    display: none;
+}
+
+
+
+@media screen and (max-width:769px) {
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:flex-start;
+        position: fixed;
+        top: 64px;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        /* gap: 30px; */
+        box-shadow: 0 40px 60px rgba(133, 133, 133, 0.897);
+        /* font-size: 20px; */
+         background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 251, 121) 90%);
+        padding: 40px 0 0 10px;
+         /* border-bottom: white; */
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: block;
+    }
+
+    .menu_times_icon{
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .contain_nav_bar{
+        z-index: 200;
+    }
+}

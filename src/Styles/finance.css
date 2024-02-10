@@ -1,0 +1,68 @@
+.finance-background-image{
+    background: linear-gradient(to bottom, rgb(191,112,104), rgb(24,30,61));
+
+}
+.career{
+    background: linear-gradient(to bottom, rgb(225,232,242), rgb(121,132,113));
+
+}
+.person{
+
+    background: linear-gradient(to bottom, rgb(223,238,245), rgb(101,74,50));
+}
+
+.books_image{
+    height: 200px;
+}
+
+
+.article_sections{
+    background: white;
+    margin-bottom: 30px;
+    padding: 20px;
+
+}
+
+.articles_box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid rgb(191,112,104);
+    background-color: white;
+    padding: 10px;
+}
+
+.article_container{
+    margin-bottom: 20px;
+}
+.article_icon{
+    font-size: 50px;
+    color: rgb(191,112,104) ;
+}
+.articles_box{
+    margin: 0 30px;
+}
+
+.articles_sections_header h2{
+    font-size: 40px;
+}
+.articles_sections_header{
+    margin: 0 20px;
+    padding-top: 30px;
+    color: rgb(191,112,104);
+}
+.articles_details{
+    margin-bottom: 30px;
+}
+@media screen and (max-width:769px) {
+    .books_image{
+        height: 200px;
+    }
+
+    .articles_box{
+        margin: 0 0px;
+        margin-bottom: 20px;
+    }
+
+   
+}

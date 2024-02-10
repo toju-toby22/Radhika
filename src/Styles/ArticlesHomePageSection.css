@@ -1,0 +1,28 @@
+.article{
+    display: flex;
+    padding: 15px;
+    gap: 20px;
+    background: white;
+    border: 1px solid rgb(173, 134, 83);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.article_icon{
+    font-size: 70px;
+}
+
+.articles_box_container{
+    margin: 0 auto;
+}
+.article_header{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width:769px) {
+    .article{
+        margin-bottom: 40px;
+    }
+}
