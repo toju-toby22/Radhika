@@ -16,6 +16,7 @@ const Banner = () => {
     return (
         <div className="banner banner_2">
             <div className='banner_container background-image' >
+
                 <Container data-aos="zoom-in" className="">
                     <Row>
                         <Col sm={6}>

@@ -6,6 +6,7 @@ import AboutPage from './Pages/AboutPage';
 import FinanceRealEstate from './Pages/FinanceRealEstate';
 import PersonalDevelomentPage from './Pages/PersonalDevelomentPage';
 import CareerPages from './Pages/CareerPages';
+import BlogPage from './Pages/BlogPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Route path="financeRealEstate"  element={ <FinanceRealEstate/> } />
       <Route path="personalDevelomentPage"  element={ <PersonalDevelomentPage/> } />
       <Route path="careerPages"  element={ <CareerPages/> } />
+      <Route path="BlogPage/:id"  element={ <BlogPage />} />
       
 
       

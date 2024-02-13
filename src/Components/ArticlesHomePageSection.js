@@ -4,9 +4,11 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { GrArticle } from "react-icons/gr";
 import "../Styles/ArticlesHomePageSection.css"
-
+import { FaPersonHalfDress } from "react-icons/fa6";
 import AOS from "aos"
 import "aos/dist/aos.css"
+import { MdOutlineRealEstateAgent } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 
 
@@ -28,14 +30,40 @@ const ArticlesHomePageSection = () => {
         <Col sm={4}>sm=4</Col>
       </Row> */}
       <Row direction="horizontal" gap={5}>
-        <Col sm data-aos="fade-up">
+
+
+        
+
+        <Col sm={6} data-aos="fade-up">
           <div className="article">
             <div className="icon_box">
-            <GrArticle className='article_icon'/>
+            <MdOutlineRealEstateAgent className='article_icon'/>
             </div>
 
             <div className="article_header_description">
-              <h2>Titile</h2>
+              <h2>Finance Real Estate</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum. Esse assumenda incidunt nemo asperiores inventore impedit delectus ipsum culpa enim similique error accusamus, 
+                voluptatum reprehenderit quasi libero magnam cupiditate.
+              </p>
+               <Link className='link' to="/financeRealEstate">
+              <button className="slider-buttn">
+                See More
+              </button>
+              </Link> 
+            </div>
+          </div>
+        </Col>
+
+
+        <Col sm={6} data-aos="fade-up">
+          <div className="article">
+            <div className="icon_box">
+            <FaPersonHalfDress className='article_icon'/>
+            </div>
+
+            <div className="article_header_description">
+              <h2>Personal Devlopment</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum. Esse assumenda incidunt nemo asperiores inventore impedit delectus ipsum culpa enim similique error accusamus, 
                 voluptatum reprehenderit quasi libero magnam cupiditate.
@@ -45,14 +73,49 @@ const ArticlesHomePageSection = () => {
         </Col>
 
 
-        <Col sm data-aos="fade-up">
+
+
+        <Col sm={6} data-aos="fade-up">
           <div className="article">
             <div className="icon_box">
             <GrArticle className='article_icon'/>
             </div>
 
             <div className="article_header_description">
-              <h2>Titile</h2>
+              <h2>Career</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum. Esse assumenda incidunt nemo asperiores inventore impedit delectus ipsum culpa enim similique error accusamus, 
+                voluptatum reprehenderit quasi libero magnam cupiditate.
+              </p>
+            </div>
+          </div>
+        </Col>
+
+        <Col sm={6} data-aos="fade-up">
+          <div className="article">
+            <div className="icon_box">
+            <GrArticle className='article_icon'/>
+            </div>
+
+            <div className="article_header_description">
+              <h2>Resources</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum. Esse assumenda incidunt nemo asperiores inventore impedit delectus ipsum culpa enim similique error accusamus, 
+                voluptatum reprehenderit quasi libero magnam cupiditate.
+              </p>
+            </div>
+          </div>
+        </Col>
+
+
+        <Col sm={6} data-aos="fade-up">
+          <div className="article">
+            <div className="icon_box">
+            <GrArticle className='article_icon'/>
+            </div>
+
+            <div className="article_header_description">
+              <h2>Speaking Engagements</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum. Esse assumenda incidunt nemo asperiores inventore impedit delectus ipsum culpa enim similique error accusamus, 
                 voluptatum reprehenderit quasi libero magnam cupiditate.
@@ -64,14 +127,14 @@ const ArticlesHomePageSection = () => {
 
 
 
-        <Col sm data-aos="fade-up">
+        <Col sm={6} data-aos="fade-up">
           <div className="article">
             <div className="icon_box">
             <GrArticle className='article_icon'/>
             </div>
 
             <div className="article_header_description">
-              <h2>Titile</h2>
+              <h2>Coming Soon</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum. Esse assumenda incidunt nemo asperiores inventore impedit delectus ipsum culpa enim similique error accusamus, 
                 voluptatum reprehenderit quasi libero magnam cupiditate.
