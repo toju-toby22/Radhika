@@ -68,6 +68,12 @@ const ArticlesHomePageSection = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum. Esse assumenda incidunt nemo asperiores inventore impedit delectus ipsum culpa enim similique error accusamus, 
                 voluptatum reprehenderit quasi libero magnam cupiditate.
               </p>
+
+              <Link className='link' to="/personalDevelomentPage">
+              <button className="slider-buttn">
+                See More
+              </button>
+              </Link> 
             </div>
           </div>
         </Col>
@@ -87,6 +93,12 @@ const ArticlesHomePageSection = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum. Esse assumenda incidunt nemo asperiores inventore impedit delectus ipsum culpa enim similique error accusamus, 
                 voluptatum reprehenderit quasi libero magnam cupiditate.
               </p>
+
+              <Link className='link' to="/careerPages">
+              <button className="slider-buttn">
+                See More
+              </button>
+              </Link> 
             </div>
           </div>
         </Col>
@@ -103,6 +115,12 @@ const ArticlesHomePageSection = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum. Esse assumenda incidunt nemo asperiores inventore impedit delectus ipsum culpa enim similique error accusamus, 
                 voluptatum reprehenderit quasi libero magnam cupiditate.
               </p>
+
+              <Link className='link' to="/">
+              <button className="slider-buttn">
+                See More
+              </button>
+              </Link> 
             </div>
           </div>
         </Col>
@@ -120,6 +138,12 @@ const ArticlesHomePageSection = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum. Esse assumenda incidunt nemo asperiores inventore impedit delectus ipsum culpa enim similique error accusamus, 
                 voluptatum reprehenderit quasi libero magnam cupiditate.
               </p>
+
+              <Link className='link' to="/">
+              <button className="slider-buttn">
+                See More
+              </button>
+              </Link> 
             </div>
           </div>
         </Col>
@@ -139,6 +163,12 @@ const ArticlesHomePageSection = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum. Esse assumenda incidunt nemo asperiores inventore impedit delectus ipsum culpa enim similique error accusamus, 
                 voluptatum reprehenderit quasi libero magnam cupiditate.
               </p>
+
+              <Link className='link' to="/">
+              <button className="slider-buttn">
+                See More
+              </button>
+              </Link> 
             </div>
           </div>
         </Col>

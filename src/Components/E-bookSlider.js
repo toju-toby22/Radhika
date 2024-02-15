@@ -3,7 +3,9 @@ import Slider from "react-slick";
 import "../Styles/slider.css"
 import sliderImage from "../Assets/logo.jpeg"
 import sliderImage2 from "../Assets/second.jpeg"
-import third from "../Assets/third.jpeg"
+import Book1 from "../Assets/Book 1.jpeg"
+import Book2 from "../Assets/Book 2.jpeg"
+import Book3 from "../Assets/Book 3.jpeg"
 
 
 import "slick-carousel/slick/slick.css";
@@ -95,7 +97,7 @@ export default class EbookSlider extends Component {
             </h2>
           <Slider {...settings}>
             <div className="slider-container-box">
-                <img className="slider-img" src={sliderImage} alt="" />
+                <img className="slider-img" src={Book1} alt="" />
 
 
               <button className="slider-buttn">
@@ -105,7 +107,7 @@ export default class EbookSlider extends Component {
 
 
             <div className="slider-container-box">
-                <img className="slider-img" src={sliderImage2} alt="" />
+                <img className="slider-img" src={Book2} alt="" />
                 <button className="slider-buttn">
                 Add to cart
               </button>
@@ -116,7 +118,7 @@ export default class EbookSlider extends Component {
 
             <div className="slider-container-box">
     
-                <img className="slider-img" src={third} alt="" />
+                <img className="slider-img" src={Book3} alt="" />
                 <button className="slider-buttn">
                 Add to cart
               </button>

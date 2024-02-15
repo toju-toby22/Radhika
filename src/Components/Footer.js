@@ -5,7 +5,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaSpotify } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { IoMailOutline } from "react-icons/io5";
-
+import { CiTwitter } from "react-icons/ci";
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div className='footer_wrapper'>
@@ -18,15 +19,21 @@ const Footer = () => {
                       Radhika
                       </h1>
                       <div className="social">
-                        <FaFacebookF className='footer_icon'/>
-                        <FaInstagram className='footer_icon'/>
-                        <FaLinkedinIn className='footer_icon'/>
+                        <Link className='link' to="https://x.com/radhikaapaliwal?s=20">
+                                                <CiTwitter className='footer_icon'/>
+                        </Link>
+                        <Link className='link' to="https://www.instagram.com/radhikaapaliwal/">
+                                                <FaInstagram className='footer_icon'/>
+                        </Link>
+                        <Link className='link' to="https://www.linkedin.com/in/radhika-paliwal">
+                                                <FaLinkedinIn className='footer_icon'/>
+                        </Link>
                       </div>
                   </div>
 
 
                   <div className="footer_col" id="services">
-                     <h3>Services</h3>
+                     <h3>Articles</h3>
                      <div className="links">
                         <a href="#">Mental Health Coaching</a>
                         <a href="#">Counselling</a>
@@ -50,7 +57,7 @@ const Footer = () => {
             <div className="footer_row">
                   <div className="form">
                     <form action="">
-                        <input type="text" placeholder="Email here..."/>
+                        <input className='emailsub' type="text" placeholder="Email here..."/>
                         <button className='email'><IoMailOutline /></button>
                     </form>
                   </div>

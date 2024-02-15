@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -9,12 +9,32 @@ import "../Styles/finance.css"
 import NavigationBar from "../Components/NavigationBar";
 import Footer from "../Components/Footer";
 import { MdOutlineRealEstateAgent } from "react-icons/md";
+import { Link } from 'react-router-dom'
+import fb from "../firebase";
+const DB = fb.firestore()
+const Careerblogs = DB.collection('Financeblogs');
 
 const CareerPages = () => {
 
     useEffect(() => {
         AOS.init({ duration: 2000 })
     }, []);
+
+    const [blogs, Setblogs] = useState([]);
+    useEffect(() => {
+      const unsubscribe = Careerblogs.limit(100).onSnapshot(querySnapshot => {
+          // Get all documents from collection - with IDs
+          const data = querySnapshot.docs.map(doc => ({
+              ...doc.data(),
+              id: doc.id,
+          }));
+          // Update state
+          Setblogs(data);
+      });
+  
+      // Detach listener
+      return unsubscribe;
+  }, []);
 
   return (
     <div>
@@ -78,41 +98,20 @@ const CareerPages = () => {
                 <div className="article_container">
                 <Container>
                     <Row direction="horizontal" gap={5}>
+                    {blogs.map(blog => (
+                  <Link className='bloglink' to={"/CareerBlogpage/" + blog.id}>
                         <Col sm className="articles_box">
                             <div className="article_icon">
                             <MdOutlineRealEstateAgent />
                             </div>
                             <div className="article_title_description">
-                                <h4 className="title">12 Ways to Invest in Real Estate</h4>
-                                <p className="description">This eBook simply highlighted how any person can build wealth through real estate. </p>
+                                <h4 className="title">{blog.Title}</h4>
+                                <p className="description">{blog.Desc} </p>
                             </div>
                         </Col>
+                        </Link>    
 
-
-
-                        <Col sm className="articles_box">
-                            <div className="article_icon">
-                            <MdOutlineRealEstateAgent />
-                            </div>
-                            <div className="article_title_description">
-                                <h3 className="title">12 Ways to Invest in Real Estate</h3>
-                                <p className="description">This eBook simply highlighted how any person can build wealth through real estate. </p>
-                            </div>
-                        </Col>
-
-
-
-
-
-                        <Col sm className="articles_box">
-                            <div className="article_icon">
-                            <MdOutlineRealEstateAgent />
-                            </div>
-                            <div className="article_title_description">
-                                <h3 className="title">12 Ways to Invest in Real Estate</h3>
-                                <p className="description">This eBook simply highlighted how any person can build wealth through real estate. </p>
-                            </div>
-                        </Col>
+                                ))}
                         
                     </Row>
                 </Container>

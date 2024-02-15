@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import image1 from "../Assets/OIP.jpeg"
+import image1 from "../Assets/OIP (1).jpeg"
 import AOS from "aos"
 import "aos/dist/aos.css"
 import "../Styles/finance.css"
@@ -109,10 +109,10 @@ const FinanceRealEstate = () => {
 
                 <div className="article_container">
                 <Container>
-                    <Row direction="horizontal" gap={5}>
+                    <Row direction="vertical" gap={5} className="blogs">
             {blogs.map(blog => (
                   <Link className='bloglink' to={"/BlogPage/" + blog.id}>
-                        <Col sm className="articles_box">
+                        <Col className="articles_box">
                             <div className="article_icon">
                             <MdOutlineRealEstateAgent />
                             </div>
@@ -124,10 +124,6 @@ const FinanceRealEstate = () => {
                         </Link>    
 
                                 ))}
-
-
-                     
-                        
                     </Row>
                 </Container>
                 </div>

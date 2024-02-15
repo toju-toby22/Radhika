@@ -68,7 +68,7 @@ const NavigationBar = () => {
 
                                 <NavDropdown.Item href="#action/3.3">
                                     <Navbar.Text className='nav-gap'>
-                                        <Link className='link' to="aboutpage">
+                                        <Link className='link' to="/aboutpage">
                                         Resources
                                         </Link>
                                     </Navbar.Text>
