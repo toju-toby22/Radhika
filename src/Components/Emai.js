@@ -23,6 +23,7 @@ const Emai = () => {
                         {
                             show &&
                             <form action="">
+                               <p className='Newsletter'>Subscribe To My Newsletter</p>   
                                 <input className='emailsub' type="text" placeholder="Email here..." />
                                 <button className='email'><IoMailOutline /></button>
                             </form>
