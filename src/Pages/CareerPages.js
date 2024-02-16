@@ -12,6 +12,7 @@ import { MdOutlineRealEstateAgent } from "react-icons/md";
 import { IoPerson } from "react-icons/io5";
 import { Link } from 'react-router-dom'
 import fb from "../firebase";
+import EbookSlider from "../Components/E-bookSlider";
 const DB = fb.firestore()
 const Careerblogs = DB.collection('Financeblogs');
 
@@ -23,22 +24,22 @@ const CareerPages = () => {
 
     const [blogs, Setblogs] = useState([]);
     useEffect(() => {
-      const unsubscribe = Careerblogs.limit(100).onSnapshot(querySnapshot => {
-          // Get all documents from collection - with IDs
-          const data = querySnapshot.docs.map(doc => ({
-              ...doc.data(),
-              id: doc.id,
-          }));
-          // Update state
-          Setblogs(data);
-      });
-  
-      // Detach listener
-      return unsubscribe;
-  }, []);
+        const unsubscribe = Careerblogs.limit(100).onSnapshot(querySnapshot => {
+            // Get all documents from collection - with IDs
+            const data = querySnapshot.docs.map(doc => ({
+                ...doc.data(),
+                id: doc.id,
+            }));
+            // Update state
+            Setblogs(data);
+        });
 
-  return (
-    <div>
+        // Detach listener
+        return unsubscribe;
+    }, []);
+
+    return (
+        <div>
 
             <NavigationBar />
 
@@ -55,8 +56,8 @@ const CareerPages = () => {
                                     </h1>
 
                                     <p className="first_text">
-                                    Explore career development with me! Discover your strengths, 
-                                    goals, and ideal path. Get tips to excel and overcome obstacles.
+                                        Explore career development with me! Discover your strengths,
+                                        goals, and ideal path. Get tips to excel and overcome obstacles.
                                     </p>
 
 
@@ -97,31 +98,32 @@ const CareerPages = () => {
 
 
                 <div className="article_container">
-                <Container>
-                    <Row direction="horizontal" gap={5}>
-                    {blogs.map(blog => (
-                  <Link className='bloglink' to={"/CareerBlogpage/" + blog.id}>
-                        <Col sm className="articles_box">
-                            <div className="article_icon">
-                            <IoPerson />
-                            </div>
-                            <div className="article_title_description">
-                                <h4 className="title">{blog.Title}</h4>
-                                <p className="description">{blog.Desc} </p>
-                            </div>
-                        </Col>
-                        </Link>    
+                    <Container>
+                        <Row direction="horizontal" gap={5}>
+                            {blogs.map(blog => (
+                                <Link className='bloglink' to={"/CareerBlogpage/" + blog.id}>
+                                    <Col sm className="articles_box">
+                                        <div className="article_icon">
+                                            <IoPerson />
+                                        </div>
+                                        <div className="article_title_description">
+                                            <h4 className="title">{blog.Title}</h4>
+                                            <p className="description">{blog.Desc} </p>
+                                        </div>
+                                    </Col>
+                                </Link>
 
-                                ))}
-                        
-                    </Row>
-                </Container>
+                            ))}
+
+                        </Row>
+                    </Container>
                 </div>
             </div>
 
+            <EbookSlider />
             <Footer />
         </div>
-  )
+    )
 }
 
 export default CareerPages

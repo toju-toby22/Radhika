@@ -11,6 +11,7 @@ import Footer from "../Components/Footer";
 import { FaPersonHalfDress } from "react-icons/fa6";
 import { Link } from 'react-router-dom'
 import fb from "../firebase";
+import EbookSlider from "../Components/E-bookSlider";
 
 
 
@@ -128,6 +129,7 @@ const PersonalDevelomentPage = () => {
                 </div>
             </div>
 
+<EbookSlider/>
             <Footer />
         </div>
   )
