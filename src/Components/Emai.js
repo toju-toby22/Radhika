@@ -11,8 +11,8 @@ const Emai = () => {
 
             <div className="email_box">
                 
-            <div className="email_button">
-                    <button type='button' onClick={() => setShow(!show)}>
+            <div>
+                    <button type='button'className='email_button' onClick={() => setShow(!show)}>
                         <MdOutlineEmail />
                     </button>
                 </div>
