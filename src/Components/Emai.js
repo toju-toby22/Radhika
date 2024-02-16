@@ -18,8 +18,8 @@ const Emai = () => {
                 </div>
 
 
-                <div className="footer_row">
-                    <div className="form">
+                <div className="">
+                    <div className="">
                         {
                             show &&
                             <form action="">
