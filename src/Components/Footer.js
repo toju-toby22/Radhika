@@ -6,6 +6,7 @@ import { FaSpotify } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { IoMailOutline } from "react-icons/io5";
 import { CiTwitter } from "react-icons/ci";
+import { PiTiktokLogoLight } from "react-icons/pi";
 import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
@@ -28,6 +29,10 @@ const Footer = () => {
                         <Link className='link' to="https://www.linkedin.com/in/radhika-paliwal">
                                                 <FaLinkedinIn className='footer_icon'/>
                         </Link>
+
+                        <Link className='link' to="https://www.linkedin.com/in/radhika-paliwal">
+                                                <PiTiktokLogoLight className='footer_icon'/>
+                        </Link>
                       </div>
                   </div>
 
@@ -35,10 +40,10 @@ const Footer = () => {
                   <div className="footer_col" id="services">
                      <h3>Articles</h3>
                      <div className="links">
-                        <a href="#">Mental Health Coaching</a>
-                        <a href="#">Counselling</a>
-                        <a href="#">Interior Decoration</a>
-                        <a href="#">Graphics Design</a>
+                        <a href="#">Career</a>
+                        <a href="#">Personal Development</a>
+                        <a href="#">Resources</a>
+                        <a href="#">Finance & Real Estate</a>
                      </div>
                   </div>
 
@@ -47,8 +52,8 @@ const Footer = () => {
                      <div className="links">
                         <a href="#">About</a>
                         <a href="#">Services</a>
-                        <a href="#">Our Policy</a>
-                        <a href="#">Help</a>
+                        {/* <a href="#">Our Policy</a>
+                        <a href="#">Help</a> */}
                      </div>
                   </div>
 

@@ -43,8 +43,7 @@ const ArticlesHomePageSection = () => {
             <div className="article_header_description">
               <h2>Finance Real Estate</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum. Esse assumenda incidunt nemo asperiores inventore impedit delectus ipsum culpa enim similique error accusamus, 
-                voluptatum reprehenderit quasi libero magnam cupiditate.
+              Unlock Financial Success: Learn Smart Money Tips for Investing and Real Estate
               </p>
                <Link className='link' to="/financeRealEstate">
               <button className="slider-buttn">
@@ -65,8 +64,7 @@ const ArticlesHomePageSection = () => {
             <div className="article_header_description">
               <h2>Personal Devlopment</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum. Esse assumenda incidunt nemo asperiores inventore impedit delectus ipsum culpa enim similique error accusamus, 
-                voluptatum reprehenderit quasi libero magnam cupiditate.
+              "Explore Personal Growth: Tips for a Fulfilling Life and Self-Improvement"
               </p>
 
               <Link className='link' to="/personalDevelomentPage">
@@ -90,8 +88,7 @@ const ArticlesHomePageSection = () => {
             <div className="article_header_description">
               <h2>Career</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum. Esse assumenda incidunt nemo asperiores inventore impedit delectus ipsum culpa enim similique error accusamus, 
-                voluptatum reprehenderit quasi libero magnam cupiditate.
+              Empower Your Career: Discover, Excel, and Achieve Your Ideal Path!
               </p>
 
               <Link className='link' to="/careerPages">
@@ -112,8 +109,7 @@ const ArticlesHomePageSection = () => {
             <div className="article_header_description">
               <h2>Resources</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum. Esse assumenda incidunt nemo asperiores inventore impedit delectus ipsum culpa enim similique error accusamus, 
-                voluptatum reprehenderit quasi libero magnam cupiditate.
+              Unlock Your Potential: Explore Top Resources for Personal & Professional Growth!
               </p>
 
               <Link className='link' to="/">
@@ -151,7 +147,7 @@ const ArticlesHomePageSection = () => {
 
 
 
-        <Col sm={6} data-aos="fade-up">
+        {/* <Col sm={6} data-aos="fade-up">
           <div className="article">
             <div className="icon_box">
             <GrArticle className='article_icon'/>
@@ -171,7 +167,7 @@ const ArticlesHomePageSection = () => {
               </Link> 
             </div>
           </div>
-        </Col>
+        </Col> */}
         
       </Row>
     </Container>

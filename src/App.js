@@ -10,10 +10,12 @@ import BlogPage from './Articlepages/BlogPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PersonaldevBlogPage from './Articlepages/PersonaldevBlogPage';
 import CareerBlogpage from './Articlepages/CareerBlogpage';
-
+import Emai from './Components/Emai'
 function App() {
   return (
     <div className="App">
+                    <Emai/>
+
     <Routes>
       <Route path="/"  element={ <HomePage/> } />
       <Route path="aboutpage"  element={ <AboutPage/> } />

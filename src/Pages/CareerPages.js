@@ -9,6 +9,7 @@ import "../Styles/finance.css"
 import NavigationBar from "../Components/NavigationBar";
 import Footer from "../Components/Footer";
 import { MdOutlineRealEstateAgent } from "react-icons/md";
+import { IoPerson } from "react-icons/io5";
 import { Link } from 'react-router-dom'
 import fb from "../firebase";
 const DB = fb.firestore()
@@ -50,12 +51,12 @@ const CareerPages = () => {
                                 <div className="banner_text_container">
 
                                     <h1 className="main_text">
-                                        Hi, I’m Radhika
+                                        My Career
                                     </h1>
 
                                     <p className="first_text">
-                                        I am a Computer Engineer by degree, Strategic Sales Architect by profession, Real Estate Investor by interest,
-                                        and most importantly someone who wants to help you to unlock your full potential.
+                                    Explore career development with me! Discover your strengths, 
+                                    goals, and ideal path. Get tips to excel and overcome obstacles.
                                     </p>
 
 
@@ -81,7 +82,7 @@ const CareerPages = () => {
 
 
             <div className="article_sections">
-                <div className="articles_sections_header">
+                {/* <div className="articles_sections_header">
                     <h2>
                         Career
                     </h2>
@@ -91,7 +92,7 @@ const CareerPages = () => {
                         aspernatur animi dolores dolorem voluptatum esse ipsum dicta facere hic
                         quod aliquid libero voluptate sapiente eveniet impedit consectetur iusto, soluta aliquam!
                     </div>
-                </div>
+                </div> */}
 
 
 
@@ -102,7 +103,7 @@ const CareerPages = () => {
                   <Link className='bloglink' to={"/CareerBlogpage/" + blog.id}>
                         <Col sm className="articles_box">
                             <div className="article_icon">
-                            <MdOutlineRealEstateAgent />
+                            <IoPerson />
                             </div>
                             <div className="article_title_description">
                                 <h4 className="title">{blog.Title}</h4>

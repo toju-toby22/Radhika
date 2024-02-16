@@ -12,7 +12,7 @@ const HomePage = () => {
         
             <Banner/>
             <ArticlesHomePageSection/>
-       
+
             <EbookSlider/>
         <Footer/>
     </div>

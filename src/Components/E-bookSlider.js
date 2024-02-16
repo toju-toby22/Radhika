@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import "../Styles/slider.css"
 import sliderImage from "../Assets/logo.jpeg"
 import sliderImage2 from "../Assets/second.jpeg"
-import Book1 from "../Assets/Book 1.jpeg"
-import Book2 from "../Assets/Book 2.jpeg"
+import Book1 from "../Assets/book5.jpeg"
+import Book2 from "../Assets/Book4.jpeg"
 import Book3 from "../Assets/Book 3.jpeg"
 
 

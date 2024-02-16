@@ -1,4 +1,30 @@
 
+.email_button{
+}
+
+.email_box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 70px;
+    position: fixed;
+    z-index: 200;
+    top: 650px;
+    width: 100%;
+    right: -25px;
+   
+}
+.email{
+    
+}
+.email_button button{
+    font-size: 25px;
+    border-radius: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(173, 134, 83);
+}
 *{
     box-sizing: border-box;
     margin:0;

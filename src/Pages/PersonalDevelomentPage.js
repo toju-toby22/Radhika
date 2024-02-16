@@ -58,12 +58,12 @@ const PersonalDevelomentPage = () => {
                                 <div className="banner_text_container">
 
                                     <h1 className="main_text">
-                                        Hi, I’m Radhika
+                                        Personal Development
                                     </h1>
 
                                     <p className="first_text">
-                                        I am a Computer Engineer by degree, Strategic Sales Architect by profession, Real Estate Investor by interest,
-                                        and most importantly someone who wants to help you to unlock your full potential.
+                                    Discover personal growth and self-improvement insights here. Learn how to overcome challenges, achieve goals, 
+                                    and live a fulfilling life with practical tips and motivation boosters.
                                     </p>
 
 
@@ -89,7 +89,7 @@ const PersonalDevelomentPage = () => {
 
 
             <div className="article_sections">
-                <div className="articles_sections_header">
+                {/* <div className="articles_sections_header">
                     <h2>
                         Personal Development
                     </h2>
@@ -99,7 +99,7 @@ const PersonalDevelomentPage = () => {
                         aspernatur animi dolores dolorem voluptatum esse ipsum dicta facere hic
                         quod aliquid libero voluptate sapiente eveniet impedit consectetur iusto, soluta aliquam!
                     </div>
-                </div>
+                </div> */}
 
 
 

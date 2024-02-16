@@ -27,20 +27,20 @@ const FinanceRealEstate = () => {
 
 
     const [blogs, Setblogs] = useState([]);
-  useEffect(() => {
-    const unsubscribe = Financeblogs.limit(100).onSnapshot(querySnapshot => {
-        // Get all documents from collection - with IDs
-        const data = querySnapshot.docs.map(doc => ({
-            ...doc.data(),
-            id: doc.id,
-        }));
-        // Update state
-        Setblogs(data);
-    });
+    useEffect(() => {
+        const unsubscribe = Financeblogs.limit(100).onSnapshot(querySnapshot => {
+            // Get all documents from collection - with IDs
+            const data = querySnapshot.docs.map(doc => ({
+                ...doc.data(),
+                id: doc.id,
+            }));
+            // Update state
+            Setblogs(data);
+        });
 
-    // Detach listener
-    return unsubscribe;
-}, []);
+        // Detach listener
+        return unsubscribe;
+    }, []);
 
 
 
@@ -60,12 +60,14 @@ const FinanceRealEstate = () => {
                                 <div className="banner_text_container">
 
                                     <h1 className="main_text">
-                                        Hi, I’m Radhika
+                                    Finance Real Estate
                                     </h1>
 
                                     <p className="first_text">
-                                        I am a Computer Engineer by degree, Strategic Sales Architect by profession, Real Estate Investor by interest,
-                                        and most importantly someone who wants to help you to unlock your full potential.
+
+                                        Welcome to Finance and Real Estate Investing! Discover smart money management, savvy investing,
+                                        and real estate insights to grow your wealth. Whether it's budgeting, debt,
+                                        investing, or real estate, find practical tips for financial success here!
                                     </p>
 
 
@@ -82,7 +84,7 @@ const FinanceRealEstate = () => {
 
                             </Col>
 
-                            
+
                         </Row>
                     </Container>
 
@@ -93,7 +95,7 @@ const FinanceRealEstate = () => {
 
 
             <div className="article_sections">
-                <div className="articles_sections_header">
+                {/* <div className="articles_sections_header">
                     <h2>
                         Finance Real Estate
                     </h2>
@@ -103,29 +105,29 @@ const FinanceRealEstate = () => {
                         aspernatur animi dolores dolorem voluptatum esse ipsum dicta facere hic
                         quod aliquid libero voluptate sapiente eveniet impedit consectetur iusto, soluta aliquam!
                     </div>
-                </div>
+                </div> */}
 
 
 
                 <div className="article_container">
-                <Container>
-                    <Row direction="vertical" gap={5} className="blogs">
-            {blogs.map(blog => (
-                  <Link className='bloglink' to={"/BlogPage/" + blog.id}>
-                        <Col className="articles_box">
-                            <div className="article_icon">
-                            <MdOutlineRealEstateAgent />
-                            </div>
-                            <div className="article_title_description">
-                                <h4 className="title">{blog.Title}</h4>
-                                <p className="description">{blog.Desc} </p>
-                            </div>
-                        </Col>
-                        </Link>    
+                    <Container>
+                        <Row direction="vertical" gap={5} className="blogs">
+                            {blogs.map(blog => (
+                                <Link className='bloglink' to={"/BlogPage/" + blog.id}>
+                                    <Col className="articles_box">
+                                        <div className="article_icon">
+                                            <MdOutlineRealEstateAgent />
+                                        </div>
+                                        <div className="article_title_description">
+                                            <h4 className="title">{blog.Title}</h4>
+                                            <p className="description">{blog.Desc} </p>
+                                        </div>
+                                    </Col>
+                                </Link>
 
-                                ))}
-                    </Row>
-                </Container>
+                            ))}
+                        </Row>
+                    </Container>
                 </div>
             </div>
 
